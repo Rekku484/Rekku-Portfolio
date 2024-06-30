@@ -4,6 +4,14 @@
     <img src="/src/assets/logo.svg" width="250" height="250" />
     <h1>WORKING IN PROGRESS...</h1>
     <h2>STAY TUNE!</h2>
+    <h3>
+      while this website is working in progress, you can check the other parts of the website
+      here<br /><a
+        ><router-link to="/works">Works</router-link><br /><router-link to="/credits"
+          >Credits</router-link
+        ></a
+      >
+    </h3>
   </div>
 </template>
 
@@ -55,5 +63,21 @@ h2 {
   font-size: 35px;
   text-align: center;
   text-shadow: #f0f8ff 1px 0px 25px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f0f8ff;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: #f0f8ff 1px 0px 25px;
+}
+
+a:link {
+  color: aliceblue;
+}
+
+a:visited {
+  color: aliceblue;
 }
 </style>

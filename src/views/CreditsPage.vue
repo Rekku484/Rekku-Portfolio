@@ -1,4 +1,7 @@
 <template>
+  <b
+    ><router-link to="/"><img src="/src/assets/logo.svg" /></router-link
+  ></b>
   <h1>Credits</h1>
   <h2>Many thanks to the people who have helped me build this website!</h2>
   <div id="masaru-avatar">
@@ -42,6 +45,12 @@ a:link {
 
 a:visited {
   color: aliceblue;
+}
+
+b {
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
 img {
