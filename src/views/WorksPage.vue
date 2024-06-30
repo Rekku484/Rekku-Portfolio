@@ -3,6 +3,9 @@
     <router-link to="/"><img src="/src/assets/logo.svg" width="350" height="350" /></router-link>
   </header>
   <h1>WORKS</h1>
+  <footer>
+    <a href="https://github.com/Rekku484/Rekku-Portfolio">Made with ♥, Deployed using Vercel</a>
+  </footer>
 </template>
 
 <style scoped>
@@ -32,5 +35,21 @@ h1 {
   font-size: 50px;
   text-align: center;
   text-shadow: #f0f8ff 1px 0px 75px;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a:link {
+  color: aliceblue;
+}
+
+a:visited {
+  color: aliceblue;
 }
 </style>
