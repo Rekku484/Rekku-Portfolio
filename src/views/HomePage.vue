@@ -10,7 +10,7 @@
         ><router-link to="/works">Works</router-link><br /><router-link to="/credits"
           >Credits</router-link
         ></a
-      >
+      ><br /><a href="https://github.com/Rekku484/Rekku-Portfolio">Github</a>
     </h3>
   </div>
 </template>
