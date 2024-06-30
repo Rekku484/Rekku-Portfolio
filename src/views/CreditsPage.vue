@@ -87,6 +87,15 @@ img {
   width: 150px;
 }
 
+img {
+  filter: drop-shadow(#f0f8ff 0px 0px -1px);
+  transition: filter 0.3s;
+}
+
+img:hover {
+  filter: drop-shadow(#f0f8ff 0px 0px 10px);
+}
+
 #credits {
   display: flex;
   flex-direction: row;
