@@ -4,7 +4,8 @@
   </header>
   <h1>WORKS</h1>
   <footer>
-    <a href="https://github.com/Rekku484/Rekku-Portfolio">Made with ♥, Deployed using Vercel</a>
+    <a href="https://github.com/Rekku484/Rekku-Portfolio">Made with ♥, Deployed using Vercel</a
+    ><br /><router-link to="/credits">Credits</router-link>
   </footer>
 </template>
 

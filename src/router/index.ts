@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import WorkPage from '../views/WorksPage.vue'
+import CreditsPage from '../views/CreditsPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,6 +18,11 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: WorkPage
+    },
+    {
+      path: '/credits',
+      name: 'credits',
+      component: CreditsPage
     }
   ]
 })
