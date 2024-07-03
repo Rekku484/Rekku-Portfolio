@@ -50,24 +50,18 @@ body {
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f0f8ff;
   font-size: 35px;
   text-align: center;
   text-shadow: #f0f8ff 1px 0px 25px;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f0f8ff;
   font-size: 35px;
   text-align: center;
   text-shadow: #f0f8ff 1px 0px 25px;
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f0f8ff;
   font-size: 25px;
   text-align: center;
   text-shadow: #f0f8ff 1px 0px 25px;

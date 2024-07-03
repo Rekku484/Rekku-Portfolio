@@ -31,18 +31,14 @@ img:hover {
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f0f8ff;
   font-size: 50px;
   text-align: center;
   text-shadow: #f0f8ff 1px 0px 75px;
 }
 
 footer {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   text-align: center;
-  color: aliceblue;
   text-decoration: none;
 }
 

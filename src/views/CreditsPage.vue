@@ -43,22 +43,16 @@
 
 <style scoped>
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: aliceblue;
   font-size: 25px;
   text-align: center;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: aliceblue;
   font-size: 25px;
   text-align: center;
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: aliceblue;
   font-size: 25px;
   text-align: center;
 }
