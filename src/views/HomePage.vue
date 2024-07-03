@@ -49,13 +49,7 @@ body {
   background-color: #04232e;
 }
 
-h1 {
-  font-size: 35px;
-  text-align: center;
-  text-shadow: #f0f8ff 1px 0px 25px;
-}
-
-h2 {
+h1, h2 {
   font-size: 35px;
   text-align: center;
   text-shadow: #f0f8ff 1px 0px 25px;

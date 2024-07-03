@@ -3,11 +3,19 @@
     <router-link to="/"><img src="/src/assets/logo.svg" width="350" height="350" /></router-link>
   </header>
   <h1>WORKS</h1>
+  <body>
+    <WorksShowcase />
+  </body>
   <footer>
     <a href="https://github.com/Rekku484/Rekku-Portfolio">Made with ♥, Deployed using Vercel</a
     ><br /><router-link to="/credits">Credits</router-link>
   </footer>
 </template>
+
+<script setup>
+import { ref } from './WorksShowcase.vue'
+
+</script>
 
 <style scoped>
 header {
