@@ -12,8 +12,8 @@
   </footer>
 </template>
 
-<script setup>
-import Works from '/src/components/WorksShowcase.vue'
+<script setup lang="ts">
+import Works from './components/WorksShowcase.vue'
 </script>
 
 <style scoped>
