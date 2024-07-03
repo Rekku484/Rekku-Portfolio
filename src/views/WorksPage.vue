@@ -4,7 +4,7 @@
   </header>
   <h1>WORKS</h1>
   <body>
-    <WorksShowcase />
+    <Works />
   </body>
   <footer>
     <a href="https://github.com/Rekku484/Rekku-Portfolio">Made with ♥, Deployed using Vercel</a
@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { ref } from './WorksShowcase.vue'
+import Works from './WorksShowcase.vue'
 
 </script>
 
