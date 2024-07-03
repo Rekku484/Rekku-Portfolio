@@ -13,8 +13,7 @@
 </template>
 
 <script setup>
-import Works from './WorksShowcase.vue'
-
+import Works from '/src/components/WorksShowcase.vue'
 </script>
 
 <style scoped>

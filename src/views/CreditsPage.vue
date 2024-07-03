@@ -3,7 +3,10 @@
     ><router-link to="/"><img src="/src/assets/logo.svg" /></router-link
   ></b>
   <h1>Credits</h1>
-  <h2>Many thanks to the people who have helped me build this website!</h2>
+  <h2>
+    This is actually the first time I touched coding, with 0 knowledge beforehand<br />I would like
+    to thank these people for helping me create this website!
+  </h2>
   <div id="credits">
     <div id="column1">
       <div id="masaru">
@@ -12,7 +15,7 @@
         </div>
         <div class="info">
           <a href="https://github.com/masaru9002">Masaru</a><br />
-          <p>for fixing most of the problems I encounter</p>
+          <p>Bug Fixing<br />Guiding me through vue</p>
         </div>
       </div>
 
@@ -34,7 +37,7 @@
         </div>
         <div class="info">
           <a href="https://github.com/ascdragonite">ascdragonite</a><br />
-          <p>for emotional support (no)</p>
+          <p>Bug Fixing</p>
         </div>
       </div>
     </div>

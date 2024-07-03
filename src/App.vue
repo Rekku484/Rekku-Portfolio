@@ -11,9 +11,11 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, footer {
+h1,
+h2,
+h3,
+footer {
   font-family: Arial, Helvetica, sans-serif;
   color: #f0f8ff;
 }
-
 </style>
