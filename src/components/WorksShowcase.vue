@@ -36,7 +36,11 @@
   </div>
 </template>
 
-<script lang="ts"></script>
+<script lang="ts">
+export default {
+  name: 'WorksShowcase'
+}
+</script>
 
 <style scoped>
 .works {
