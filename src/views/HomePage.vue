@@ -10,7 +10,10 @@
         ><router-link to="/works">Works</router-link><br /><router-link to="/credits"
           >Credits</router-link
         ></a
-      ><br /><a href="https://github.com/Rekku484/Rekku-Portfolio">Github</a>
+      ><br /><a href="https://github.com/Rekku484/Rekku-Portfolio">Github</a><br /><router-link
+        to="/chars"
+        >Characters</router-link
+      >
     </h3>
   </div>
 </template>
@@ -49,7 +52,8 @@ body {
   background-color: #04232e;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 35px;
   text-align: center;
   text-shadow: #f0f8ff 1px 0px 25px;
