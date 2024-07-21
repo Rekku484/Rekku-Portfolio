@@ -11,7 +11,7 @@
     <div id="column1">
       <div id="masaru">
         <div class="avatar">
-          <img src="https://avatars.githubusercontent.com/u/75265021?v=4" />
+          <a href="https://github.com/masaru9002"><img src="https://avatars.githubusercontent.com/u/75265021?v=4" /></a>
         </div>
         <div class="info">
           <a href="https://github.com/masaru9002">Masaru</a><br />
@@ -21,7 +21,7 @@
 
       <div id="volt">
         <div class="avatar">
-          <img src="https://avatars.githubusercontent.com/u/108687132?v=4" />
+          <a href="https://github.com/VoltSeven"><img src="https://avatars.githubusercontent.com/u/108687132?v=4" /></a>
         </div>
         <div class="info">
           <a href="https://github.com/VoltSeven">Volt7</a><br />
@@ -33,7 +33,7 @@
     <div id="column2">
       <div id="asc">
         <div class="avatar">
-          <img src="https://avatars.githubusercontent.com/u/59214813?v=4" />
+          <a href="https://github.com/ascdragonite"><img src="https://avatars.githubusercontent.com/u/59214813?v=4" /></a>
         </div>
         <div class="info">
           <a href="https://github.com/ascdragonite">ascdragonite</a><br />

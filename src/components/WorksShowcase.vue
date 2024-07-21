@@ -1,6 +1,11 @@
 <template>
   <div class="bento-grid-imgs">
-    <h1>REWORKING THE WHOLE GALLERY...</h1>
+    <div class="works-imgs">
+      <a href="https://twitter.com/Rekku484/status/1800932093041770508"><img src="/src/assets/arts/1.jpeg"></a>
+    </div>
+    <div class="works-imgs">
+      <a href="https://twitter.com/Rekku484/status/1770064835184636399"><img src="/src/assets/arts/2.jpeg"></a>
+    </div>
   </div>
 </template>
 
@@ -12,15 +17,12 @@ export default {
 
 <style scoped>
 .bento-grid-imgs {
-  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
 .bento-grid-imgs img {
-  margin: 0.5%;
   height: 250px;
   width: auto;
   object-fit: cover;
@@ -40,7 +42,7 @@ img:hover {
   filter: drop-shadow(#86dbfd 0px 0px 10px);
 }
 
-.work-imgs {
+a {
   margin: 1%;
 }
 
