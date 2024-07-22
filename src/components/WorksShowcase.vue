@@ -1,37 +1,98 @@
 <template>
-  <div class="bento-grid-imgs">
-    <div class="works-imgs">
-      <a href="https://twitter.com/Rekku484/status/1800932093041770508"><img src="/src/assets/arts/1.jpeg"></a>
-    </div>
-    <div class="works-imgs">
-      <a href="https://twitter.com/Rekku484/status/1770064835184636399"><img src="/src/assets/arts/2.jpeg"></a>
-    </div>
+  <div class="arts">
+    <!-- 2024-yi-->
+    <a href="https://x.com/Rekku484/status/1800932093041770508"
+      ><img src="https://pbs.twimg.com/media/GP4x_RaagAAta25?format=jpg&name=4096x4096"
+    /></a>
+    <!-- 2024-ori-->
+    <a href="https://x.com/Rekku484/status/1760226502640095636"
+      ><img src="https://pbs.twimg.com/media/GG2UqcwWIAAxd83?format=jpg&name=4096x4096"
+    /></a>
+    <!--2024-paraba-raffle-->
+    <a href="https://x.com/Rekku484/status/1748607444455153721"
+      ><img src="https://pbs.twimg.com/media/GERNAfXaMAAOPnr?format=jpg&name=4096x4096"
+    /></a>
+    <!--2024-gabespirit-raffle-->
+    <a href="https://x.com/Rekku484/status/1745811288943731051"
+      ><img src="https://pbs.twimg.com/media/GDpeF3FaMAAAu-u?format=jpg&name=4096x4096"
+    /></a>
+    <!--2024-diego-rafa-commission-->
+    <a href="https://x.com/Rekku484/status/1745465400811495446"
+      ><img src="https://pbs.twimg.com/media/GDkjdvWbkAAhPjl?format=jpg&name=4096x4096"
+    /></a>
+    <!--2024-safi-raffle-->
+    <a href="https://x.com/Rekku484/status/1741489405104386292"
+      ><img src="https://pbs.twimg.com/media/GCsBaCGbUAAOk-8?format=jpg&name=4096x4096"
+    /></a>
+    <!--2023-robertspirit-raffle-->
+    <a href="https://x.com/Rekku484/status/1739377313018691897"
+      ><img src="https://pbs.twimg.com/media/GCOAZYSa4AEuass?format=jpg&name=4096x4096"
+    /></a>
+    <!--2023-fivepebbles-rotting-->
+    <a href="https://x.com/Rekku484/status/1738201333713514616"
+      ><img src="https://pbs.twimg.com/media/GB9U4ssbMAEIOIA?format=jpg&name=4096x4096"
+    /></a>
+    <!--2023-ori-bluearchive-->
+    <a href="https://x.com/Rekku484/status/1736001915744641203"
+      ><img src="https://pbs.twimg.com/media/GBeD-ipbIAAgKEr?format=jpg&name=4096x4096"
+    /></a>
+    <!--2023-yanara-commission-->
+    <a href="https://x.com/Rekku484/status/1729197910267736235"
+      ><img src="https://pbs.twimg.com/media/F_9YVb4aoAA8YIs?format=jpg&name=large"
+    /></a>
+    <!--2023-espeon-art-->
+    <a href="https://x.com/Rekku484/status/1727015511706501209"
+      ><img src="https://pbs.twimg.com/media/F_eXZScakAAYF79?format=jpg&name=4096x4096"
+    /></a>
+    <!--2023-rainworld-artificer-alea.jacta.est.-->
+    <a href="https://x.com/Rekku484/status/1720860832207393130"
+      ><img src="https://pbs.twimg.com/media/F-G5m6TasAAe5tV?format=jpg&name=4096x4096"
+    /></a>
+    <!--2023-big-project-->
+    <a href="https://www.youtube.com/watch?v=k8eajOqY6mg"
+      ><img src="https://pbs.twimg.com/media/F4vpQ3Ta0AArolO?format=jpg&name=large"
+    /></a>
+    <!--2023-rafa-couch-->
+    <a href="https://x.com/Rekku484/status/1710983821460693060"
+      ><img src="https://pbs.twimg.com/media/F76itSDbMAABsre?format=jpg&name=4096x4096"
+    /></a>
+    <!--2023-melusine-->
+    <a href="https://x.com/Rekku484/status/1705918784559808560"
+      ><img src="https://pbs.twimg.com/media/F6ykCSRbAAAQCQP?format=jpg&name=4096x4096"
+    /></a>
+    <!--2023-fivepebbles-destoryed-->
+    <a href="https://x.com/Rekku484/status/1619569996417597440"
+      ><img src="https://pbs.twimg.com/media/FnndxbBagAAX4Sh?format=jpg&name=4096x4096"
+    /></a>
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'WorksShowcase'
+  name: 'WorksShowcase',
+  methods: {
+    randomWidth() {
+      return Math.floor(Math.random() * (500 - 200 + 1)) + 200 + 'px'
+    }
+  }
 }
 </script>
 
 <style scoped>
-.bento-grid-imgs {
-  display: flex;
+.arts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-}
-
-.bento-grid-imgs img {
-  height: 250px;
-  width: auto;
-  object-fit: cover;
-  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 img {
-  align-items: center;
-  justify-content: center;
+  height: 275px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
   transition:
     transform 0.5s,
     filter 0.5s;
@@ -40,13 +101,5 @@ img {
 img:hover {
   transform: scale(1.02);
   filter: drop-shadow(#86dbfd 0px 0px 10px);
-}
-
-a {
-  margin: 1%;
-}
-
-h1 {
-  text-align: center;
 }
 </style>
