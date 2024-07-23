@@ -94,12 +94,15 @@ img {
   border-radius: 20px;
   object-fit: cover;
   transition:
-    transform 0.5s,
-    filter 0.5s;
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, filter;  
 }
 
 img:hover {
+  -webkit-transform: scale(1.02);
   transform: scale(1.02);
+  -webkit-filter: drop-shadow(#86dbfd 0px 0px 10px);
   filter: drop-shadow(#86dbfd 0px 0px 10px);
 }
 </style>
