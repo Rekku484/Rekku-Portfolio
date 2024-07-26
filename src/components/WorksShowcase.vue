@@ -72,7 +72,7 @@ export default {
   name: 'WorksShowcase',
   methods: {
     randomWidth() {
-      return Math.floor(Math.random() * (500 - 200 + 1)) + 200 + 'px'
+      return Math.floor(Math.random() * (5 - 2 + 1)) + 2 + '%'
     }
   }
 }
@@ -96,7 +96,7 @@ img {
   transition:
     transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
     filter 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform, filter;  
+  will-change: transform, filter;
 }
 
 img:hover {

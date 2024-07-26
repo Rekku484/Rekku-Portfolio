@@ -4,7 +4,12 @@
   </header>
   <h1>WORKS</h1>
   <body>
-    <Works />
+    <Suspense>
+      <Works />
+      <template #fallback>
+        <LoadingAni />
+      </template>
+    </Suspense>
   </body>
   <footer>
     <a href="https://github.com/Rekku484/Rekku-Portfolio">Made with ♥, Deployed using Vercel</a
@@ -13,6 +18,7 @@
 </template>
 
 <script setup lang="ts">
+import LoadingAni from '@/components/Loading/LoadingAni.vue'
 import Works from '../components/WorksShowcase.vue'
 </script>
 
