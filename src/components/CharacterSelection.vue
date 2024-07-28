@@ -1,14 +1,18 @@
 <template>
-  <div class="char">
-    <div class="showcase">
-      <div id="rafa">
-        <a>"RAFA"</a>
-        <div id="rafa_img"></div>
-        <b>CAT SPIRIT</b>
+  <div class="characterContainer">
+    <div class="character">
+      <div class="ocs" id="rafa">
+        <div class="top-text"><a>CAT SPIRIT</a></div>
+        <div class="image" id="rafa_img"></div>
+        <div class="bottom-text"><b>"RAFA"</b></div>
       </div>
     </div>
-    <div class="showcase">
-      <div id="rishi"><a>"RISHI"</a><b>SLUGCAT</b></div>
+    <div class="character">
+      <div class="ocs" id="rishi">
+        <div class="top-text"><a>SLUGCAT</a></div>
+        <div class="image" id="rishi_img"></div>
+        <div class="bottom-text"><b>"RISHI"</b></div>
+      </div>
     </div>
   </div>
 </template>
@@ -20,20 +24,19 @@ export default {
 </script>
 
 <style scoped>
-.char {
+.characterContainer {
   display: flex;
   justify-content: center;
 }
 
-.showcase {
+.character {
   position: relative;
   width: 80vh;
   height: 50vh;
   margin: 1%;
 }
 
-#rafa,
-#rishi {
+.ocs {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -45,13 +48,12 @@ export default {
   transition: background-color 0.5s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-#rafa:hover,
-#rishi:hover {
+.ocs:hover {
   background-color: rgb(9, 40, 60);
 }
 
-a,
-b {
+.top-text,
+.bottom-text {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 150px;
@@ -59,32 +61,36 @@ b {
   color: #62c0ff;
   user-select: none;
   white-space: nowrap;
+  transition: filter 0.5s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-a {
-  z-index: 3;
+/* top layer */
+
+.top-text {
+  z-index: 1;
   position: absolute;
-  bottom: -25px;
-  left: -50px;
+  top: -25px;
+  left: 300px;
+  position: absolute;
   transition:
     left 0.7s cubic-bezier(0.87, 0, 0.13, 1),
     filter 0.5s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-#rafa:hover a,
-#rishi:hover a {
+.ocs:hover .top-text {
   left: 10px;
   filter: none;
 }
 
-#rafa_img {
+/* middle layer */
+
+.image {
   z-index: 2;
   position: relative;
   filter: grayscale() brightness(0.5) blur(2px);
   overflow: hidden;
   width: 80vh;
   height: 50vh;
-  background-image: url(/src/assets/characters/rafa.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: -25px;
@@ -93,23 +99,39 @@ a {
     filter 0.5s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-#rafa:hover #rafa_img {
+.ocs:hover .image {
   filter: none;
   background-position-x: -50px;
 }
 
-b {
-  z-index: 1;
-  top: -25px;
-  left: 300px;
+#rafa_img {
+  background-image: url(/src/assets/characters/rafa.png);
+}
+
+#rishi_img {
+  background-image: url(/src/assets/characters/rishi_placeholder.png);
+  background-size: auto 155%;
+  background-position-x: 250px;
+}
+
+.ocs:hover #rishi_img {
+  background-position-x: 200px;
+}
+
+/* bottom layer */
+
+.bottom-text {
+  z-index: 3;
+  bottom: -25px;
+  left: -50px;
   position: absolute;
   transition:
     left 0.7s cubic-bezier(0.87, 0, 0.13, 1),
     filter 0.5s cubic-bezier(0.87, 0, 0.13, 1);
 }
-#rafa:hover b,
-#rishi:hover b {
+
+.ocs:hover .bottom-text {
+  left: 10px;
   filter: none;
-  left: 150px;
 }
 </style>
