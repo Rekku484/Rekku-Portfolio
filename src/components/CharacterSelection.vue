@@ -1,17 +1,19 @@
 <template>
-  <div class="characterContainer">
-    <div class="character">
-      <div class="ocs" id="rafa">
-        <div class="top-text"><a>CAT SPIRIT</a></div>
-        <div class="image" id="rafa_img"></div>
-        <div class="bottom-text"><b>"RAFA"</b></div>
+  <div class="popup">
+    <div class="characterContainer">
+      <div class="character">
+        <div class="ocs" id="rafa">
+          <div class="top-text"><a>CAT SPIRIT</a></div>
+          <div class="image" id="rafa_img"></div>
+          <div class="bottom-text"><b>"RAFA"</b></div>
+        </div>
       </div>
-    </div>
-    <div class="character">
-      <div class="ocs" id="rishi">
-        <div class="top-text"><a>SLUGCAT</a></div>
-        <div class="image" id="rishi_img"></div>
-        <div class="bottom-text"><b>"RISHI"</b></div>
+      <div class="character">
+        <div class="ocs" id="rishi">
+          <div class="top-text"><a>SLUGCAT</a></div>
+          <div class="image" id="rishi_img"></div>
+          <div class="bottom-text"><b>"RISHI"</b></div>
+        </div>
       </div>
     </div>
   </div>
@@ -45,7 +47,10 @@ export default {
   height: 100%;
   background-color: rgb(3, 11, 16);
   border-radius: 50px;
-  transition: background-color 0.5s cubic-bezier(0.87, 0, 0.13, 1);
+  transition:
+    background-color 0.5s cubic-bezier(0.87, 0, 0.13, 1),
+    height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .ocs:hover {
@@ -105,11 +110,11 @@ export default {
 }
 
 #rafa_img {
-  background-image: url(/src/assets/characters/rafa.png);
+  background-image: url(/src/assets/characters/rafa/rafa.png);
 }
 
 #rishi_img {
-  background-image: url(/src/assets/characters/rishi_placeholder.png);
+  background-image: url(/src/assets/characters/rishi/rishi_placeholder.png);
   background-size: auto 155%;
   background-position-x: 250px;
 }

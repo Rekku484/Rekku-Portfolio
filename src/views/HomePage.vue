@@ -1,4 +1,96 @@
 <template>
+  <div id="whole-screen">
+    <div id="logo">
+      <img src="/src/assets/logo.svg" width="250" height="250" />
+    </div>
+    <h1>Notice:<br />This website is still working in progress!</h1>
+    <div class="navi" id="artworks">
+      <router-link to="/works"
+        ><img src="/src/assets/ico/works.svg" width="50" height="50"
+      /></router-link>
+      <div class="bg-img">
+        <img src="https://pbs.twimg.com/media/GP4x_RaagAAta25?format=jpg&name=4096x4096" />
+      </div>
+    </div>
+
+    <div class="navi" id="github">
+      <a href="https://github.com/Rekku484/Rekku-Portfolio"
+        ><img src="/src/assets/ico/github.svg" width="50" height="50"
+      /></a>
+      <div class="bg-img">
+        <img src="https://pbs.twimg.com/media/F9mOkB8bIAAy4jL?format=jpg&name=4096x4096" />
+      </div>
+    </div>
+
+    <div class="navi" id="characters">
+      <router-link to="/chars"><h2>Characters</h2></router-link>
+      <div class="bg-img">
+        <img src="https://pbs.twimg.com/media/F8XtmvNa0AA9GlC?format=jpg&name=large" />
+      </div>
+    </div>
+
+    <div class="navi" id="credits">
+      <router-link to="/credits"><h2>Credits</h2></router-link>
+      <div class="bg-img">
+        <img src="https://pbs.twimg.com/media/GTWYCxTaEAAMKxH?format=jpg&name=large" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+#whole-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#logo {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.bg-img img {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  filter: opacity(0);
+  transition: filter 0.3s;
+}
+
+#artworks:hover .bg-img img,
+#github:hover .bg-img img,
+#characters:hover .bg-img img,
+#credits:hover .bg-img img {
+  filter: opacity(0.3);
+}
+
+img {
+  filter: drop-shadow(#f0f8ff 0px 0px 30px);
+}
+</style>
+
+<!-- BACKUP -->
+
+<!-- <template>
   <title>Rekku484</title>
   <div id="landing">
     <img src="/src/assets/logo.svg" width="250" height="250" />
@@ -72,4 +164,4 @@ a:link {
 a:visited {
   color: aliceblue;
 }
-</style>
+</style> -->

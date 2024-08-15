@@ -1,5 +1,9 @@
 <template>
   <div class="arts">
+    <!-- 2024 rafa zzz cinema style-->
+    <a href="https://x.com/Rekku484/status/1816525713828384825"
+      ><img src="https://pbs.twimg.com/media/GTWYCxTaEAAMKxH?format=jpg&name=large"
+    /></a>
     <!-- 2024-yi-->
     <a href="https://x.com/Rekku484/status/1800932093041770508"
       ><img src="https://pbs.twimg.com/media/GP4x_RaagAAta25?format=jpg&name=4096x4096"
@@ -59,10 +63,6 @@
     <!--2023-melusine-->
     <a href="https://x.com/Rekku484/status/1705918784559808560"
       ><img src="https://pbs.twimg.com/media/F6ykCSRbAAAQCQP?format=jpg&name=4096x4096"
-    /></a>
-    <!--2023-fivepebbles-destoryed-->
-    <a href="https://x.com/Rekku484/status/1619569996417597440"
-      ><img src="https://pbs.twimg.com/media/FnndxbBagAAX4Sh?format=jpg&name=4096x4096"
     /></a>
   </div>
 </template>
