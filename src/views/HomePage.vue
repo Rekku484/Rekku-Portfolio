@@ -3,20 +3,15 @@
     <div id="logo">
       <img src="/src/assets/logo.svg" width="250" height="250" />
     </div>
-    <h1>Notice:<br />This website is still working in progress!</h1>
     <div class="navi" id="artworks">
-      <router-link to="/works"
-        ><img src="/src/assets/ico/works.svg" width="50" height="50"
-      /></router-link>
+      <router-link to="/works"><h2>Works</h2></router-link>
       <div class="bg-img">
         <img src="https://pbs.twimg.com/media/GP4x_RaagAAta25?format=jpg&name=4096x4096" />
       </div>
     </div>
 
     <div class="navi" id="github">
-      <a href="https://github.com/Rekku484/Rekku-Portfolio"
-        ><img src="/src/assets/ico/github.svg" width="50" height="50"
-      /></a>
+      <a href="https://github.com/Rekku484/Rekku-Portfolio"><h2>Github</h2></a>
       <div class="bg-img">
         <img src="https://pbs.twimg.com/media/F9mOkB8bIAAy4jL?format=jpg&name=4096x4096" />
       </div>
@@ -48,20 +43,20 @@
   align-content: center;
 }
 
-h1 {
-  text-align: center;
+h1,
+h2 {
+  text-align: left;
 }
 
 #logo {
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 22%;
 }
 
 .navi {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  margin-left: 25%;
+  margin-right: 75%;
 }
 
 .bg-img img {

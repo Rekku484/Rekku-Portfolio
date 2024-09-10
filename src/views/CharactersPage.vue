@@ -1,8 +1,11 @@
 <template>
   <header>
-    <router-link to="/"><img src="/src/assets/logo.svg" width="250" height="250" /></router-link>
+    <router-link to="/"><img src="/src/assets/logo.svg" width="125" height="125" /></router-link>
+    <nav>
+      <router-link to="/works"><h1>Works</h1></router-link>
+      <router-link to="/chars"><h1>Characters</h1></router-link>
+    </nav>
   </header>
-  <h1>Characters</h1>
   <body>
     <CharacterShowcase />
   </body>
@@ -14,12 +17,12 @@ import CharacterShowcase from '../components/CharacterSelection.vue'
 
 <style scoped>
 h1 {
-  text-align: center;
+  text-align: right;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  margin-left: 3%;
   align-self: center;
 }
 

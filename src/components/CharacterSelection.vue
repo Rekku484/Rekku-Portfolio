@@ -1,4 +1,83 @@
 <template>
+  <div class="characterContainer">
+    <div class="character">
+      <div class="ocs" id="rafa">
+        <div class="image" id="rafa_img"></div>
+      </div>
+    </div>
+    <div class="character">
+      <div class="ocs" id="rishi">
+        <div class="image" id="rishi_img"></div>
+      </div>
+    </div>
+    <div class="character">
+      <div class="ocs" id="unnamed-solarian">
+        <div class="image" id="unnamed-solarian"></div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+export default {
+  name: 'CharacterShowcase'
+}
+</script>
+
+<style scoped>
+.characterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.character {
+  position: relative;
+  width: 25vh;
+  height: 40vh;
+  margin: 1%;
+}
+
+.ocs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #dcdcdc;
+  border-radius: 50px;
+  transform: skew(-15deg);
+  filter: drop-shadow(#f0f8ff 0px 0px 0px) brightness(0.75);
+  transition: filter 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ocs:hover {
+  filter: drop-shadow(#f0f8ff 0px 0px 25px) brightness(1);
+}
+
+.image {
+  position: relative;
+  width: 50vh;
+  height: 40vh;
+  transform: skew(15deg);
+  background-repeat: no-repeat;
+}
+
+#rafa_img {
+  background-image: url(/src/assets/characters/rafa/rafa.png);
+  background-position: 120%;
+  background-size: auto 130%;
+}
+
+#rishi_img {
+  background-image: url(/src/assets/characters/rishi/rishi_placeholder.png);
+  background-size: auto 150%;
+}
+</style>
+
+<!-- <template>
   <div class="popup">
     <div class="characterContainer">
       <div class="character">
@@ -139,4 +218,4 @@ export default {
   left: 10px;
   filter: none;
 }
-</style>
+</style> -->
