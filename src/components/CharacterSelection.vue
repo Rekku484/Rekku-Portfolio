@@ -1,30 +1,87 @@
 <template>
   <div class="characterContainer">
-    <div class="character">
-      <div class="ocs" id="rafa">
-        <div class="image" id="rafa_img"></div>
-      </div>
+    <div class="character first-btn" @click="charDetail">
+      <div class="ocs" id="rafa"><img src="/src/assets/Char_Selection.svg" /></div>
     </div>
-    <div class="character">
-      <div class="ocs" id="rishi">
-        <div class="image" id="rishi_img"></div>
-      </div>
+    <div class="character second-btn" @click="charDetail">
+      <div class="ocs" id="rishi"><img src="/src/assets/Char_Selection.svg" /></div>
     </div>
-    <div class="character">
-      <div class="ocs" id="unnamed-solarian">
-        <div class="image" id="unnamed-solarian"></div>
-      </div>
+    <div class="character third-btn" @click="charDetail">
+      <div class="ocs" id="unnamed-solarian"><img src="/src/assets/Char_Selection.svg" /></div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import gsap from 'gsap'
 export default {
-  name: 'CharacterShowcase'
+  name: 'CharacterShowcase',
+  methods: {
+    charDetail() {
+      gsap.to('.first-btn', { scale: 0.4, duration: 0.5, ease: 'power4.out', x: -500, y: -300 })
+      gsap.to('.second-btn', { scale: 0.4, duration: 0.5, ease: 'power4.out', x: -670, y: -300 })
+      gsap.to('.third-btn', { scale: 0.4, duration: 0.5, ease: 'power4.out', x: -840, y: -300 })
+    }
+  }
 }
 </script>
 
 <style scoped>
+.characterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.character {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin: -2rem;
+  background-repeat: no-repeat;
+  background-image: url(/src/assets/Char_Selection.svg);
+  filter: drop-shadow(#f0f8ff 0px 0px 0px) brightness(0.75);
+  transition: filter 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.character:hover {
+  filter: drop-shadow(#f0f8ff 0px 0px 25px) brightness(1);
+}
+
+.ocs {
+  mask-image: url(/src/assets/Char_Selection.svg);
+  mask-repeat: no-repeat;
+  background-color: #dcdcdc;
+}
+
+#rafa {
+  background-image: url(/src/assets/characters/rafa/rafa.png);
+  background-position: 85%;
+  background-size: auto 130%;
+  cursor: pointer;
+}
+
+#rishi {
+  background-image: url(/src/assets/characters/rishi/rishi_placeholder.png);
+  background-position: 150% 0%;
+  background-size: auto 150%;
+  cursor: pointer;
+}
+
+#unnamed-solarian {
+  background-image: url(https://pbs.twimg.com/media/GQNnBJra4AAOVnT?format=jpg&name=900x900);
+  background-position: 20% 0%;
+  background-size: auto 120%;
+  cursor: pointer;
+}
+
+img {
+  filter: opacity(0);
+}
+</style>
+
+<!-- <style scoped>
 .characterContainer {
   display: flex;
   justify-content: center;
@@ -75,7 +132,7 @@ export default {
   background-image: url(/src/assets/characters/rishi/rishi_placeholder.png);
   background-size: auto 150%;
 }
-</style>
+</style> -->
 
 <!-- <template>
   <div class="popup">

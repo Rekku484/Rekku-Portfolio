@@ -46,6 +46,7 @@
 h1,
 h2 {
   text-align: left;
+  font-weight: 450;
 }
 
 #logo {
@@ -57,6 +58,7 @@ h2 {
   flex-direction: row;
   margin-left: 25%;
   margin-right: 75%;
+  margin-top: -25px;
 }
 
 .bg-img img {
