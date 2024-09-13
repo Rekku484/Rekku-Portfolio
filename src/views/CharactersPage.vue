@@ -1,11 +1,13 @@
 <template>
-  <header>
-    <router-link to="/"><img src="/src/assets/logo.svg" width="125" height="125" /></router-link>
+  <div class="navbar">
+    <div id="home">
+      <router-link to="/"><img src="/src/assets/logo.svg" width="125" height="125" /></router-link>
+    </div>
     <nav>
       <router-link to="/works"><h1>Works</h1></router-link>
       <router-link to="/chars"><h1>Characters</h1></router-link>
     </nav>
-  </header>
+  </div>
   <body>
     <CharacterShowcase />
   </body>
@@ -20,7 +22,7 @@ h1 {
   text-align: right;
 }
 
-header {
+.navbar {
   display: flex;
   margin-left: 3%;
   align-self: center;

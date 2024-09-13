@@ -1,13 +1,30 @@
 <template>
   <div class="characterContainer">
-    <div class="character first-btn" @click="charDetail">
-      <div class="ocs" id="rafa"><img src="/src/assets/Char_Selection.svg" /></div>
+    <div id="charSelection">
+      <div class="character" @click="charDetail">
+        <div class="ocs" id="rafa"><img src="/src/assets/Char_Selection.svg" /></div>
+      </div>
+      <div class="character" @click="charDetail">
+        <div class="ocs" id="rishi"><img src="/src/assets/Char_Selection.svg" /></div>
+      </div>
+      <div class="character" @click="charDetail">
+        <div class="ocs" id="unnamed-solarian"><img src="/src/assets/Char_Selection.svg" /></div>
+      </div>
+      <div class="dum"></div>
     </div>
-    <div class="character second-btn" @click="charDetail">
-      <div class="ocs" id="rishi"><img src="/src/assets/Char_Selection.svg" /></div>
-    </div>
-    <div class="character third-btn" @click="charDetail">
-      <div class="ocs" id="unnamed-solarian"><img src="/src/assets/Char_Selection.svg" /></div>
+    <div class="charContDetails">
+      <div class="charNameSpecies">
+        <div class="charDE" id="rafaDE">
+          <h1>Rafa<br />Cat Spirit</h1>
+        </div>
+        <div class="charDE" id="rishiDE">
+          <h1>Rishi<br />Slugcat</h1>
+        </div>
+        <div class="charDE" id="unnamed-solarianDE">
+          <h1>NO_DATA<br />Solarian</h1>
+        </div>
+      </div>
+      <div class="charDisc"></div>
     </div>
   </div>
 </template>
@@ -18,9 +35,36 @@ export default {
   name: 'CharacterShowcase',
   methods: {
     charDetail() {
-      gsap.to('.first-btn', { scale: 0.4, duration: 0.5, ease: 'power4.out', x: -500, y: -300 })
-      gsap.to('.second-btn', { scale: 0.4, duration: 0.5, ease: 'power4.out', x: -670, y: -300 })
-      gsap.to('.third-btn', { scale: 0.4, duration: 0.5, ease: 'power4.out', x: -840, y: -300 })
+      gsap.to('#charSelection', {
+        scale: 0.4,
+        duration: 0.5,
+        ease: 'power4.out',
+        xPercent: -25,
+        yPercent: -35
+        // x: '-25rem',
+        // y: '-25vh'
+      })
+
+      // gsap.to('.second-btn', {
+      //   scale: 0.4,
+      //   duration: 0.5,
+      //   ease: 'power4.out',
+      //   xPercent: -48,
+      //   x: '-25vw',
+      //   y: '-25vh'
+      // })
+      // gsap.to('.third-btn', {
+      //   scale: 0.4,
+      //   duration: 0.5,
+      //   ease: 'power4.out',
+      //   xPercent: -96,
+      //   x: '-25vw',
+      //   y: '-25vh'
+      // })
+      let sex = document.getElementsByClassName('dum') as HTMLCollectionOf<HTMLElement>
+      if (sex.length != 0) {
+        sex[0].style.setProperty('flex', 'auto')
+      }
     }
   }
 }
@@ -31,13 +75,33 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
+  height: 80vh;
+  margin: 1rem;
+}
+
+#charSelection {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 80vh;
 }
 
+.dum {
+  flex: 0;
+  transition: flex 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#charSelection {
+  flex: auto;
+}
+
 .character {
-  display: flex;
+  /* display: flex;
   align-content: center;
-  flex-direction: column;
+  flex-direction: column; */
   margin: -2rem;
   background-repeat: no-repeat;
   background-image: url(/src/assets/Char_Selection.svg);
@@ -78,6 +142,37 @@ export default {
 
 img {
   filter: opacity(0);
+}
+
+/* .charContDetails {
+  display: flex;
+  position: absolute;
+} */
+
+.charNameSpecies {
+  position: absolute;
+  top: 19rem;
+  left: 4.9rem;
+}
+
+.charDE {
+  position: absolute;
+}
+
+/* #rafaDE, */
+#rishiDE,
+#unnamed-solarianDE {
+  filter: opacity(0);
+}
+
+#rafa:hover #rafaDE {
+  filter: opacity(1);
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 450;
+  text-wrap: nowrap;
 }
 </style>
 

@@ -11,7 +11,7 @@
     </div>
 
     <div class="navi" id="github">
-      <a href="https://github.com/Rekku484/Rekku-Portfolio"><h2>Github</h2></a>
+      <a href="https://github.com/Rekku484/Rekku-Portfolio" target="_blank"><h2>Github</h2></a>
       <div class="bg-img">
         <img src="https://pbs.twimg.com/media/F9mOkB8bIAAy4jL?format=jpg&name=4096x4096" />
       </div>
@@ -58,7 +58,15 @@ h2 {
   flex-direction: row;
   margin-left: 25%;
   margin-right: 75%;
-  margin-top: -25px;
+  margin-bottom: -25px;
+  transition:
+    text-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    text-decoration 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navi:hover {
+  text-shadow: 0px 0px 10px #f0f8ff;
+  text-decoration: underline;
 }
 
 .bg-img img {
@@ -66,9 +74,9 @@ h2 {
   position: absolute;
   top: 0px;
   left: 0px;
-  max-width: 100%;
+  height: 100vh;
+  width: 100%;
   object-fit: cover;
-  height: 100%;
   filter: opacity(0);
   transition: filter 0.3s;
 }

@@ -1,4 +1,5 @@
 <template>
+  <base target="_blank" />
   <div class="arts">
     <!-- 2024 rafa zzz cinema style-->
     <a href="https://x.com/Rekku484/status/1816525713828384825"
@@ -68,11 +69,18 @@
 </template>
 
 <script lang="ts">
+import gsap from 'gsap'
 export default {
   name: 'WorksShowcase',
   methods: {
-    randomWidth() {
-      return Math.floor(Math.random() * (5 - 2 + 1)) + 2 + '%'
+    ScrollSkew() {
+      gsap.registerPlugin(ScrollTrigger)
+      gsap.to('.arts a', {
+        scrollTrigger: {
+          trigger: '.arts a',
+          toggleActions: 'restart none none none'
+        }
+      })
     }
   }
 }
