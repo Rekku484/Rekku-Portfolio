@@ -1,9 +1,9 @@
 {
-  "homepage": "https://www.rekku484.com",
   "name": "rekku484-portfolio",
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://www.rekku484.com",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",

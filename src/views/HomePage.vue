@@ -29,9 +29,9 @@
       <div class="bg-img">
         <!-- <img src="https://pbs.twimg.com/media/GTWYCxTaEAAMKxH?format=jpg&name=large" /> -->
       </div>
-      <video autoplay loop muted>
+      <!-- <video autoplay loop muted>
         <source src="/src/assets/test.mp4" type="video/mp4" />
-      </video>
+      </video> -->
     </div>
   </div>
 </template>
