@@ -6,29 +6,32 @@
     <div class="navi" id="artworks">
       <router-link to="/works"><h2>Works</h2></router-link>
       <div class="bg-img">
-        <img src="https://pbs.twimg.com/media/GP4x_RaagAAta25?format=jpg&name=4096x4096" />
+        <!-- <img src="https://pbs.twimg.com/media/GP4x_RaagAAta25?format=jpg&name=4096x4096" /> -->
       </div>
     </div>
 
     <div class="navi" id="github">
       <a href="https://github.com/Rekku484/Rekku-Portfolio" target="_blank"><h2>Github</h2></a>
       <div class="bg-img">
-        <img src="https://pbs.twimg.com/media/F9mOkB8bIAAy4jL?format=jpg&name=4096x4096" />
+        <!-- <img src="https://pbs.twimg.com/media/F9mOkB8bIAAy4jL?format=jpg&name=4096x4096" /> -->
       </div>
     </div>
 
     <div class="navi" id="characters">
       <router-link to="/chars"><h2>Characters</h2></router-link>
       <div class="bg-img">
-        <img src="https://pbs.twimg.com/media/F8XtmvNa0AA9GlC?format=jpg&name=large" />
+        <!-- <img src="https://pbs.twimg.com/media/F8XtmvNa0AA9GlC?format=jpg&name=large" /> -->
       </div>
     </div>
 
     <div class="navi" id="credits">
       <router-link to="/credits"><h2>Credits</h2></router-link>
       <div class="bg-img">
-        <img src="https://pbs.twimg.com/media/GTWYCxTaEAAMKxH?format=jpg&name=large" />
+        <!-- <img src="https://pbs.twimg.com/media/GTWYCxTaEAAMKxH?format=jpg&name=large" /> -->
       </div>
+      <video autoplay loop muted>
+        <source src="/src/assets/test.mp4" type="video/mp4" />
+      </video>
     </div>
   </div>
 </template>
@@ -69,7 +72,7 @@ h2 {
   text-decoration: underline;
 }
 
-.bg-img img {
+/* .bg-img img {
   z-index: -1;
   position: absolute;
   top: 0px;
@@ -90,6 +93,17 @@ h2 {
 
 img {
   filter: drop-shadow(#f0f8ff 0px 0px 30px);
+} */
+
+video {
+  position: absolute;
+  z-index: -1;
+  filter: opacity(0.3);
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  top: 0px;
+  left: 0px;
 }
 </style>
 
